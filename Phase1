@@ -56,18 +56,8 @@
 
 
 
-
-\section{فرمول نویسی}
-\begin{align*}
-\max z =&\sum_{k=1}^{k_1}(c_{1}X^{1,K})\lambda_{1k}+\sum_{k=1}^{k_1}(c_{2}X^{2,K})\lambda_{2k}+\cdots+\sum_{k=1}^{k_n}(c_{n}X^{n,K})\lambda_{nk} \\
-st:\qquad&\sum_{k=1}^{k_1} (A_{1}X^{1,k})\lambda_{1k}+\sum_{k=1}^{k_2}(A_{2}X^{2,k})\lambda_{2k}+\cdots+\sum_{k=1}^{k_n}(A_{n}X^{n,k})\lambda_{nk}\leq b_{0} \\
-&\sum_{k=1}^{k_1}\lambda_{1k}=1\\
-&\sum_{k=1}^{k_1}\lambda_{1k}=1\\
-&\qquad\vdots\\
-&\sum_{k=1}^{k_1}\lambda_{1k}=1\\
-&\lambda_{jk}\geq 0\\
-\end{align*}
-
+\subsubsection{داستان کاربری صاحبان فروشگاه}
+\centerline{\includegraphics[scale=.8]{store.PNG}}
 
 
 .
