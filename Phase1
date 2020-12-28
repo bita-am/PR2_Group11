@@ -1,0 +1,78 @@
+\documentclass[12pt,onecolumn,a4paper]{article}
+\usepackage{epsfig,graphicx,subfigure,amsthm,amsmath}
+\usepackage{color,xcolor}     
+\usepackage{xepersian}
+\settextfont[Scale=1.2]{B Nazanin.ttf}
+\setlatintextfont[Scale=1]{Times New Roman}
+
+
+
+
+
+\begin{document}
+\title{پروژه درس سیستم های اطلاعاتی مدیریت} 
+\author{شیرین شهابی نژاد، بیتا علی محمدی و ابوالفضل جوادی راد\\
+دانشکده مهندسی صنایع}
+\date{\today}
+\maketitle
+
+\section{سند\lr{Envisioning }} 
+
+\subsection{مشتریان و کاربران هدف} 
+سه دسته کاربر برای سیستم وجود دارد:\\
+مشتری
+صاحب فروشگاه
+پیک موتوری
+
+
+
+
+
+
+
+
+
+
+
+\section{فرمول نویسی}
+\begin{align*}
+\max z =&\sum_{k=1}^{k_1}(c_{1}X^{1,K})\lambda_{1k}+\sum_{k=1}^{k_1}(c_{2}X^{2,K})\lambda_{2k}+\cdots+\sum_{k=1}^{k_n}(c_{n}X^{n,K})\lambda_{nk} \\
+st:\qquad&\sum_{k=1}^{k_1} (A_{1}X^{1,k})\lambda_{1k}+\sum_{k=1}^{k_2}(A_{2}X^{2,k})\lambda_{2k}+\cdots+\sum_{k=1}^{k_n}(A_{n}X^{n,k})\lambda_{nk}\leq b_{0} \\
+&\sum_{k=1}^{k_1}\lambda_{1k}=1\\
+&\sum_{k=1}^{k_1}\lambda_{1k}=1\\
+&\qquad\vdots\\
+&\sum_{k=1}^{k_1}\lambda_{1k}=1\\
+&\lambda_{jk}\geq 0\\
+\end{align*}
+
+
+
+.
+
+\section{\lr{Task Board}}
+\subsection{ابتدای اسپرینت}
+\centerline{\includegraphics[scale=.5]{1.PNG}}
+\centerline{\includegraphics[scale=.5]{2.PNG}}
+\centerline{\includegraphics[scale=.5]{3.PNG}}
+\centerline{\includegraphics[scale=.5]{4.PNG}}
+\section{\lr{BurnDown Chart}}
+\begin{thebibliography}{99}
+\bibitem{}
+سایت فرادرس
+\bibitem{}
+سایت ویکی پدیا فارسی
+
+
+
+
+\end{thebibliography}
+
+
+
+
+
+
+
+
+
+\end{document}
