@@ -1,1 +1,132 @@
+\documentclass[12pt,onecolumn,a4paper]{article}
+\usepackage{epsfig,graphicx,subfigure,amsthm,amsmath,indentfirst,geometry,titling,array}
+    \newcounter{rowno}
+    \setcounter{rowno}{0}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{color,xcolor,tikz}   
+\usepackage[table]{xcolor}
+\usepackage{xepersian}
+\settextfont[Scale=1.2]{B Nazanin.ttf}
+\setlatintextfont[Scale=1]{Times New Roman}
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\parindent}{1.15em}
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ right=25mm,
+ top=25mm,
+ left=25mm,
+ bottom=25mm
+ }
+
+
+\definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
+\newcommand\titlepagedecoration{%
+\begin{tikzpicture}[remember picture,overlay,shorten >= -10pt]
+
+\coordinate (aux1) at ([yshift=-15pt]current page.north east);
+\coordinate (aux2) at ([yshift=-410pt]current page.north east);
+\coordinate (aux3) at ([xshift=-4.5cm]current page.north east);
+\coordinate (aux4) at ([yshift=-150pt]current page.north east);
+
+\begin{scope}[titlepagecolor!40,line width=12pt,rounded corners=12pt]
+\draw
+  (aux1) -- coordinate (a)
+  ++(225:5) --
+  ++(-45:5.1) coordinate (b);
+\draw[shorten <= -10pt]
+  (aux3) --
+  (a) --
+  (aux1);
+\draw[opacity=0.6,titlepagecolor,shorten <= -10pt]
+  (b) --
+  ++(225:2.2) --
+  ++(-45:2.2);
+\end{scope}
+\draw[titlepagecolor,line width=8pt,rounded corners=8pt,shorten <= -10pt]
+  (aux4) --
+  ++(225:0.8) --
+  ++(-45:0.8);
+\begin{scope}[titlepagecolor!70,line width=6pt,rounded corners=8pt]
+\draw[shorten <= -10pt]
+  (aux2) --
+  ++(225:3) coordinate[pos=0.45] (c) --
+  ++(-45:3.1);
+\draw
+  (aux2) --
+  (c) --
+  ++(135:2.5) --
+  ++(45:2.5) --
+  ++(-45:2.5) coordinate[pos=0.3] (d);   
+\draw 
+  (d) -- +(45:1);
+\end{scope}
+\end{tikzpicture}%
+}
+
+\begin{document}
+\title{\vspace{-1.5cm}\includegraphics[scale=.7]{Sprint2/Sharif.jpg}\\\line(1,0){14cm}\\«پروژه دوم درس سیستم‌های اطلاعاتی مدیریت»\\
+فاز دوم\\\line(1,0){14cm}\\}
+\author{\Large مؤلفان:\\
+\Large شیرین شهابی‌نژاد\\ 
+\Large بیتا علی‌محمّدی \\
+\Large ابوالفضل جوادی‌راد\\[2cm]}
+
+\date{دی ماه 1399}
+
+\maketitle
+\titlepagedecoration
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\clearpage
+\pagenumbering{arabic} 
+\section{نمودار\lr{Use Case  }}
+این نمودار عملکرد سیستم را نشان می دهد و این که چه کسانی با چه سیستم هایی از سیستم مورد نظر در ارتباط هستند. ارتباط آن ها با سیستم چگونه است و چه انتظارتی از سیستم دارند. در این نمودار هدف تعیین نیازها است نه تعیین چگونگی برآورده شدن آن ها.
+
+\subsection{تعریف\lr{actor}}
+نقشی که کاربر در ارتباط با سیستم ایفا می‌کند، کنشگر نامیده می شود. کنشگر آغاز کننده‌ی فعالیتی در سیستم است. در اینجا توجه به نقش کاربر است و نه شخص کاربر. کلیه‌پی کاربران از جمله سایر سیستم ها\lr{actor}سیستم محسوب می شوند.
+
+\subsection{جدول تعریف \lr{actor}ها}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{longtable}[c]{|M{3 cm} | M{11cm}|}
+ \caption{تعریف کنشگرها\label{long}}\\
+
+ \hline
+ \multicolumn{2}{| c |}{جدول کنشگرها}\\
+ \hline
+ کنشگر &  تعریف\\
+ \hline
+ \endfirsthead
+
+ \hline
+ \multicolumn{2}{|c|}{ادامه جدول تعریف \lr{actor}ها \ref{long}}\\
+ \hline
+ کنشگر & تعریف\\
+ \hline
+ \endhead
+
+ \hline
+ \endfoot
+ کاربر سیستم & مشتری بالقوه ای است که درسیستم ثبت نام نموده است. \\
+ بازدید کننده & بازدید کننده مشتری بالقوه ای است که یا درسیستم ثبت نام نکرده است یا درسیستم وارد نشده است.\\
+ پیک موتوری & کاربر سیستم که وظیفه رساندن محموله ها و یا بازپس گیری ان ها را دارد.\\
+ فروشگاه & کاربر سیستم که محصول خود را در سایت ما قرار می دهد.\\
+ دیتابیس فروشگاه & اطلاعات جمع اوری شده از فروشگاه ها ومحصولات ان ها در سایت \\
+ دیتابیس پیک ها & اطلاعات جمع اوری شده از پیک ها و محموله های ان ها\\
+ دیتابیس مشتریان & اطلاعات جمع اوری شده از مشتریان و محصولات خریداری شده ان ها\\
+ فنی & تیم فنی مسئول کنش وواکنش صحیح سیستم\\
+ سیستم & سیستم مسئول واکنش درمقابل کنش کاربران دیگر است\\
+ پشتیبانی & تیم پشتیبانی وظیفه پیگیری و پاسخ به مشتریان را درقبال محصول داراست\\
+ مالی & کنشگر مالی وظیفه انجام تراکنش مالی و ذخیره داده آن را داراست\\ 
+ حقوقی & بخش حقوقی وظیفه تنظیم قرارداد های بین فروشندگان و دفاع از جوانب حقوقی پلتفرم ماراداراست\\
+ سامانه اطلاع رسانی & این کنشگر وظیفه ارتباط مستقیم با کاربر را از طریق ایمیل و پیامک دارد.\\
+ \end{longtable}
+
+\subsection{تصویر کاربران}
+\centerline{\includegraphics[scale=.7]{Sprint2/actors.jpg}}
 
