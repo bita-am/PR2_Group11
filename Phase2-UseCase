@@ -130,3 +130,28 @@
 \subsection{تصویر کاربران}
 \centerline{\includegraphics[scale=.7]{Sprint2/actors.jpg}}
 
+
+\subsection{جدول راهنمای مورد کاربردها}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{longtable}[c]{|M{3 cm} | M{8cm}| M{4cm}|}
+ \caption{راهنمای نمودار \lr{UseCase}\label{long}}\\
+
+ \hline
+ \multicolumn{3}{| c |}{جدول موارد کاربرد}\\
+ \hline
+ مورد کاربرد &  توصیف مورد کاربرد & کنشگرهای مرتبط\\
+ \hline
+ \endfirsthead
+
+ \hline
+ \multicolumn{3}{|c|}{ادامه جدول موارد کاربرد\ref{long}}\\
+ \hline
+ مورد کاربرد &  توصیف مورد کاربرد & کنشگرهای مرتبط\\
+ \hline
+ \endhead
+
+ \hline
+ \endfoot
+ ثبت نام مشتریان & کاربر جدید از طریق سیستم (وبسایت) و با وارد کردن  اطلاعات خود، شماره تماس یا ایمیل اقدام به ثبت نام می‌کند. پس از دریافت ایمیل یپا یامک تأیید از طرف سامانه اطلاع‌رسانی، ثبت نام کامل می‌شود و اطلاعات فرد در دیتابیس مشتریان ثبت می‌شود. & کاربر سیستم، سیستم، سامانه اطلاع‌رسانی، دیتابیس مشتریان
+ \hline
+ \end{longtable}
