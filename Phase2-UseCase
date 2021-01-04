@@ -20,7 +20,7 @@
  left=25mm,
  bottom=25mm
  }
-
+dld
 
 \definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
 \newcommand\titlepagedecoration{%
