@@ -222,6 +222,39 @@
 8-در مورد کاربر پیگیری خرید باهماهنگی با پشتیبانی با برداشت اطلاعات از پایگاه داده انجام می شود.\\ 
 
 
+\section{بررسی نمودارهای فعالیت}
+
+\subsection{شکل نمودار فعالیت خرید}
+\centerline{\includegraphics[scale=.2]{Sprint2/Activity-خرید.png}}
+
+\subsection{شکل نمودار فعالیت برگشت کالا}
+\centerline{\includegraphics[scale=.5]{Sprint2/returning.jpg}}
+\subsection{شکل نمودار فعالیت ثبت نام}
+\subsubsection{شکل نمودار ثبت نام مشتری}
+\centerline{\includegraphics[scale=.5]{Sprint2/فعالیت-مشتری.jpg}}
+\subsubsection{شکل نمودار ثبت نام فروشگاه}
+\centerline{\includegraphics[scale=.5]{Sprint2/فعالیت-فروشگاه.jpg}}
+\subsubsection{شکل نمودار ثبت نام پیک}
+\centerline{\includegraphics[scale=.5]{Sprint2/فعالیت-پیک.jpg}}
+
+
+
+\section{بررسی نمودارهای توالی }
+\subsection{نمودارتوالی خرید}
+\centerline{\includegraphics[scale=.2]{Sprint2/توالی-خرید.png}}
+
+
+\subsection{نمودار توالی  برگشت کالا}
+\centerline{\includegraphics[scale=.5]{Sprint2/sequence_returning.png}}
+
+\subsection{شکل نمودار توالی ثبت نام}
+\subsubsection{شکل نمودار ثبت نام مشتری}
+\centerline{\includegraphics[scale=.5]{Sprint2/توالی-مشتری.jpg}}
+\subsubsection{شکل نمودار ثبت نام فروشگاه}
+\centerline{\includegraphics[scale=.5]{Sprint2/توالی-فروشگاه.jpg}}
+\subsubsection{شکل نمودار ثبت نام پیک}
+\centerline{\includegraphics[scale=.5]{Sprint2/توالی-پیک.jpg}}
+
 
 \subsection{نمودار نهایی}
 \centerline{\includegraphics[scale=.5]{Sprint2/Copy of Untitled Diagram.jpg}}
