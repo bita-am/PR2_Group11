@@ -288,7 +288,15 @@
 \centerline{\includegraphics[scale=.5]{Sprint2/bizagi_returning1.jpg}}
 \centerline{\includegraphics[scale=.5]{Sprint2/bizagi_returning2.jpg}}
 
-
+\subsection{فرضیات}
+\begin{itemize}
+  \item تقسیم بندی براساس فرایندهای اصلی یعنی ثبت نام،خریدو مرجوعی مدلسازی صورت گرفته است.\\
+  \item دراین بررسی به علت استقلال فرایند هاو ارتباط آن ها با مشتری این فرایند ها به صورت پول های مجزا درنظر گرفته شده اند.
+  \item بخش فنی سیستم در این بررسی قرار نگرفته است.
+  \item برای اجرای این مدل از قوانین ساختاریافته بهره گرفته شده است.
+  \item در هر مرحله ارتباط با مشتری مشتری درانتهای فرایند از وضعیت کنونی خود اگاه میگردد.
+  \itemفرض شده است که در فرآیند خرید هیچ‌گاه مشتری از خرید پشیمان نمی‌شود و فرآیند را تا پرداخت هزینه ادامه می‌دهد. 
+\end{itemize}
 \subsection{نمودار نهایی}
 \centerline{\includegraphics[scale=.5]{Sprint2/Copy of Untitled Diagram.jpg}}
 
